@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="./images/weather.png">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="display-temp vh-100" id="search">
+        <div class="bg-color  pt-5 vh-100">
+
+            <div class="container">
+                <div class="search m-auto">
+                    <input type="text" id="search-bar" class="w-100 mb-5 shadow" placeholder="&#xF002; Search City..."style="font-family:Arial, FontAwesome" />
+                </div>
+                <div class="city-temp d-flex ">
+
+                    <!-- Today's Card -->
+                    <div class="temp-card shadow">
+                        <div class="day-and-date d-flex justify-content-between">
+                            <p id="today">Monday</p>
+                            <p id="today-date">3 May</p>
+                        </div>
+
+                        <div class="temp-datails">
+                            <p id="location"></p>
+                            <div class="d-flex justify-content-between my-4 ">
+                                <div class="pt-3">
+                                    <h2 id="today-degree" class="d-inline-block"></h2>
+                                    <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                                </div>
+                                <img id="today-icon" width="90" />
+                            </div>
+                            <p id="today-description" class="fs-2"></p>
+                            <p id="date" class="text-center"></p>
+                            <div class="details d-flex justify-content-evenly">
+                                <div>
+                                    <i class="fas fa-umbrella  "></i>
+                                    <span id="humidty"></span> <span>%</span>
+                                </div>
+
+                                <div> <i class="fas fa-wind    "></i>
+                                    <span id="wind"></span> <span>km/h</span>
+                                </div>
+                                <div> <i class="far fa-compass    "></i>
+                                    <span id="compass"></span>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Next Days Cards -->
+                    <div class="temp-card text-center shadow">
+                        <div class="day-and-date">
+                            <p class="nextDay">Tuesday</p>
+                            <!-- <p class="nextDayDate">may</p> -->
+                        </div>
+
+                        <div class="temp-datails">
+                            <div>
+                                <img class="nextDay-icon" width="90" />
+                            </div>
+                            <h2 class="max-degree d-inline-block"></h2>
+                            <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                            <br>
+                            <p class="min-degree d-inline-block"></p>
+                            <p class="d-inline-block"><sup>o</sup>C</p>
+                            <p class="nextDay-description fs-3 m-0"></p>
+                            <p class="nextDate"></p>
+                            <div class="details d-flex justify-content-evenly  ">
+                                <div>
+                                    <i class="fas fa-umbrella  "></i>
+
+                                    <span class="nextDayHumidity"></span> <span>%</span>
+                                </div>
+
+                                <div> <i class="fas fa-wind    "></i>
+                                    <span class="nextDayWind"></span> <span>km/h</span>
+                                </div>
+                                <!-- <div> <i class="far fa-compass    "></i>
+                        <span class="nextDayCompass"></span>
+                      </div> -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- three Days Cards -->
+                    <div class="temp-card text-center shadow">
+                        <div class="day-and-date">
+                            <p class="nextDay">Wednsday</p>
+                        </div>
+
+                        <div class="temp-datails">
+                            <div>
+                                <img class="nextDay-icon" width="90" />
+                            </div>
+                            <h2 class="max-degree d-inline-block"></h2>
+                            <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                            <br>
+                            <p class="min-degree d-inline-block"></p>
+                            <p class="d-inline-block"><sup>o</sup>C</p>
+                            <p class="nextDay-description fs-3 m-0"></p>
+                            <p class="nextDate"></p>
+                            <div class="details d-flex justify-content-evenly  ">
+                                <div>
+                                    <i class="fas fa-umbrella  "></i>
+
+                                    <span class="nextDayHumidity"></span> <span>%</span>
+                                </div>
+
+                                <div> <i class="fas fa-wind    "></i>
+                                    <span class="nextDayWind"></span> <span>km/h</span>
+                                </div>
+                                <!-- <div> <i class="far fa-compass    "></i>
+                        <span class="nextDayCompass"></span>
+                      </div> -->
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container pt-3">
+            <p class="text-center text-white mb-0">Copyright &copy; 2024 Designed by Fawzey. All rights reserved</p>
+            <div
+                class="social-media text-white text-center mt-2 d-flex justify-content-center align-items-center gap-4">
+                <div class="social d-flex justify-content-center align-items-center"> 
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social d-flex justify-content-center align-items-center"> 
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="social d-flex justify-content-center align-items-center"> 
+                    <i class="fab fa-pinterest"></i>
+                </div>
+                <div class="social d-flex justify-content-center align-items-center"> 
+                    <i class="fab fa-google-plus"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
